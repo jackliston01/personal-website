@@ -193,3 +193,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+document.getElementById("copyemail").addEventListener("click", function(event) {
+  event.preventDefault();  
+  const email = this.innerText;
+  navigator.clipboard.writeText("jackliston01@gmail.com").then(() => {
+  }).catch(err => {
+      console.error("Failed to copy: ", err);
+  });
+})
+
+document.getElementById("copypn").addEventListener("click", function(event) {
+  event.preventDefault();  
+  const email = this.innerText;
+  navigator.clipboard.writeText("3239613030").then(() => {
+  }).catch(err => {
+      console.error("Failed to copy: ", err);
+  });
+})
+
