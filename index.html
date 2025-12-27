@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Liston</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            line-height: 1.6;
+            color: #111;
+            max-width: 800px;
+            margin: 10px 0 40px 0px;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+
+        h1, h2, h3 {
+            font-family: inherit;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            border-bottom: none;
+            padding-bottom: 0;
+            text-transform: none;
+            letter-spacing: 0.05em;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 40px;
+            border-bottom: 1px solid #7b7b7b;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.0rem;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .header-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .contact-info {
+            font-size: 1rem;
+        }
+        
+        .contact-info p {
+            margin: 0 0 10px 0;
+        }
+
+        .section-content {
+            margin-bottom: 20px;
+        }
+
+        ul.plain-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.plain-list li {
+            margin-bottom: 8px;
+        }
+        
+        ul.bullet-list {
+            padding-left: 20px;
+        }
+
+        .blog-item {
+            margin-bottom: 15px;
+        }
+        
+        .footer-socials {
+            margin-bottom: 15px;
+        }
+        .footer-socials a {
+            margin-right: 20px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 20px 12px;
+                padding: 0 12px;
+            }
+            .header-container {
+                flex-direction: column-reverse;
+                gap: 20px;
+                align-items: flex-start;
+            }
+            .bio-photo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="header-text">
+            <h1>Jack Liston</h1>
+            <div class="contact-info">
+                <p>
+                    Student at Laguna Beach High School
+                <br>
+                    <a href="mailto:jackliston01@gmail.com">jackliston01@gmail.com</a><br>
+                    323-961-3030
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <div class="section-content">
+            <p>
+                I am a high school student at Laguna Beach High School '27 with a primary research interest in number theory, particularly elliptic curves.
+            </p>
+            <p>
+                Beyond academics, I teach a Model United Nations class at my local middle school and am extremely fascinated in cryptographic applications in decentralized forms (namely cryptocurrency but also other areas). 
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        
+            <strong>Programming:</strong> Python (Flask, Tkinter), Javascript, C++<br>
+            <strong>Mathematics:</strong> Soon to have Associates Degree in Mathematics from Santa Ana College. Completed Calculus 3 and "Intro to Linear Algebra and Differential Equations"<br>
+            <strong>Economics:</strong> Led team to State Finals of the National Economics Challenge. Econometric research focus
+        
+    </section>
+
+    <section id="writing">
+        <h2>Writing</h2>
+        <div class="section-content">
+            <p>I write about things that interest me. You can find my full archive at <a href="https://substack.com/@jackliston" target="_blank">substack.com/@jackliston</a>.</p>
+        </div>
+        <ul class="plain-list">
+            <li class="blog-item">
+                <a href="https://substack.com/home/post/p-152379208" target="_blank">DailyScore -- Archiving my life</a>
+            </li>
+            <li class="blog-item">
+                <a href="https://jackliston.substack.com/p/the-social-contract" target="_blank">Argumentative essay on the social contract</a>
+            </li>
+        </ul>
+    </section>
+
+    <footer style="margin-top: 60px; font-size: 0.9rem; color: #444; border-top: 1px solid #eee; padding-top: 20px;">
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/jack-liston-797730268/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jackliston01" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
